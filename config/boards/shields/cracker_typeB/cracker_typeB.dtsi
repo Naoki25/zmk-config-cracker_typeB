@@ -7,7 +7,11 @@
     chosen {
         zmk,physical-layout = &cracker_typeB_physical_layout;
     };
-    
+
+    none: none {
+        compatible = "zmk,behavior-none";
+    };
+
     cracker_typeB_physical_layout: cracker_typeB_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
@@ -85,10 +89,6 @@
     };
 };
 
-{
-    none: none {
-        compatible = "zmk,behavior-none";
-    };
-};
+
 
 
