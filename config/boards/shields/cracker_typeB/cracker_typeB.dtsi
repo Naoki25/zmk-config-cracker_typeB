@@ -8,11 +8,6 @@
         zmk,physical-layout = &cracker_typeB_physical_layout;
     };
 
-    none: none {
-        compatible = "zmk,behavior-none";
-        #binding-cells = <0>;
-    };
-
     cracker_typeB_physical_layout: cracker_typeB_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
