@@ -1,0 +1,28 @@
+if SHIELD_CRACKER_TYPEB_R
+
+config ZMK_KEYBOARD_NAME
+    default "cracker_typeB_R"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_POINTING
+    default y
+
+config PAW3222
+    default y
+
+endif
+
+if SHIELD_CRACKER_TYPEB_L
+
+config ZMK_KEYBOARD_NAME
+    default "cracker_typeB_L"
+
+config ZMK_SPLIT
+    default y
+
+endif
