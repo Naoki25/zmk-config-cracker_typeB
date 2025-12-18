@@ -84,3 +84,11 @@
                 ;
     };
 };
+
+{
+    none: none {
+        compatible = "zmk,behavior-none";
+    };
+};
+
+
