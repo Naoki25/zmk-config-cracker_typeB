@@ -10,9 +10,3 @@
             , <&gpio0 9 GPIO_ACTIVE_HIGH>
             ;
 };
-{
-    none: none {
-        compatible = "zmk,behavior-none";
-        #binding-cells = <0>;
-    };
-};
