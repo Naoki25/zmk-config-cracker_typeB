@@ -10,6 +10,7 @@
 
     none: none {
         compatible = "zmk,behavior-none";
+        #binding-cells = <0>;
     };
 
     cracker_typeB_physical_layout: cracker_typeB_physical_layout {
