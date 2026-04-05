@@ -112,7 +112,15 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+		compatible = "zmk,combos";
+		combo_layer5 {
+            timeout-ms = <100>;
+            key-positions = <16 17>;     // j と k の位置
+            bindings = <&mo 5>;        // 押している間レイヤー5
+            layers = <4>;              // レイヤー4でのみ有効
+        };
+	};
 
     keymap {
         compatible = "zmk,keymap";
@@ -155,8 +163,8 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans        &kp LA(RIGHT_ARROW)    &lt_to_layer_0 5 SQT    &trans      &trans    &trans
-&trans  &trans  &trans  &trans  &trans        &kp LA(LEFT_ARROW)     &mkp MB1                &mkp MB2    &trans    &trans
+&trans  &trans  &trans  &trans  &trans        &kp LA(LEFT_ARROW)     &kp LA(RIGHT_ARROW)     &trans      &trans    &trans
+&trans  &trans  &trans  &trans  &trans        &trans                 &mkp MB1                &mkp MB2    &trans    &trans
 &trans  &trans  &trans  &trans  &trans        &trans                 &trans                  &trans      &trans    &trans
                 &trans  &trans  &trans        &trans
             >;
