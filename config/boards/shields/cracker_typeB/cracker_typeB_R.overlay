@@ -70,7 +70,7 @@
         input-processors = 
             <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //Y軸反転
-            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
+//            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_temp_layer 4 10000>;                            //オートマウスレイヤーの選択
     scroller {
         layers = <5>;
@@ -93,11 +93,11 @@
 
 &zip_temp_layer {
     excluded-positions = <
-        15 // h
+//        15 // h
         16 // J
         17 // K
-        5  // y
         6  // u
+        7  // i
 
     >;
     require-prior-idle-ms = <200>;
