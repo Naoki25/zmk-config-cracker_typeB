@@ -1,4 +1,4 @@
-#include "cracker_typeB.dtsi"
+#include "cracker.dtsi"
 
 &kscan0 {
         col-gpios
