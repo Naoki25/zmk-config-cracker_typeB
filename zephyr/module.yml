@@ -1,4 +1,4 @@
-name: tortht
+name: cracker
 build:
   settings:
     board_root: config

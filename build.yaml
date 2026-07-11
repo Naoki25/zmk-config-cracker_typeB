@@ -19,9 +19,9 @@
 ---
 include:
  - board: seeeduino_xiao_ble
-   shield: cracker_typeB_R
+   shield: cracker_R
    snippet: studio-rpc-usb-uart
  - board: seeeduino_xiao_ble
-   shield: cracker_typeB_L
+   shield: cracker_L
  - board: seeeduino_xiao_ble
    shield: settings_reset

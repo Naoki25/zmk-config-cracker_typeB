@@ -5,10 +5,10 @@
 
 / {
     chosen {
-        zmk,physical-layout = &cracker_typeB_physical_layout;
+        zmk,physical-layout = &cracker_physical_layout;
     };
 
-    cracker_typeB_physical_layout: cracker_typeB_physical_layout {
+    cracker_physical_layout: cracker_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
         transform = <&default_transform>;

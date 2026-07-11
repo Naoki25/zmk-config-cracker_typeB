@@ -1,7 +1,7 @@
-if SHIELD_CRACKER_TYPEB_R
+if SHIELD_cracker_R
 
 config ZMK_KEYBOARD_NAME
-    default "cracker_typeB_R"
+    default "cracker_R"
 
 config ZMK_SPLIT
     default y
@@ -17,10 +17,10 @@ config PAW3222
 
 endif
 
-if SHIELD_CRACKER_TYPEB_L
+if SHIELD_cracker_L
 
 config ZMK_KEYBOARD_NAME
-    default "cracker_typeB_L"
+    default "cracker_L"
 
 config ZMK_SPLIT
     default y
