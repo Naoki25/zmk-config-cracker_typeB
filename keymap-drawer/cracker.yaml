@@ -1,0 +1,252 @@
+layout: {zmk_keyboard: cracker}
+layers:
+  default:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - {t: P, h: '4'}
+  - {t: A, h: LEFT CONTROL}
+  - {t: S, h: LEFT SHIFT}
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - {t: L, h: RIGHT SHIFT}
+  - {t: ',', h: RIGHT CONTROL}
+  - {t: Z, h: LEFT GUI}
+  - {t: X, h: LEFT ALT}
+  - C
+  - V
+  - {t: B, h: BLUETOOTH}
+  - N
+  - M
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - {t: ., h: NUM}
+  - {t: SPACE, h: ARROW}
+  - {t: TAB, h: FUNCTION}
+  - BACKSPACE
+  - {t: ENTER, h: '4'}
+  '4':
+  - {t: ▽, type: trans}
+  - '='
+  - +
+  - '*'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - '-'
+  - '-'
+  - /
+  - LANGUAGE 2
+  - LANGUAGE 1
+  - '&mkp MB4'
+  - PAGE DOWN
+  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '@'
+  - {t: ▽, type: trans}
+  - '&mkp MB3'
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  FUNCTION:
+  - '!'
+  - '"'
+  - '#'
+  - $
+  - '%'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&'
+  - ''''
+  - '?'
+  - '~'
+  - INTERNATIONAL 3
+  - '&bracket_macro'
+  - ;
+  - ':'
+  - ^
+  - Sft+INTERNATIONAL 3
+  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+PRINTSCREEN
+  - '&screen_shot_macro'
+  - '&parenthesis_macro'
+  - '@'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NUM:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - '='
+  - '4'
+  - '5'
+  - '6'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  ARROW:
+  - {t: ▽, type: trans}
+  - Ctl+-
+  - UP ARROW
+  - Ctl++
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BRIGHTNESS DEC
+  - Gui+UP ARROW
+  - BRIGHTNESS INC
+  - HOME
+  - Sft+Ctl+LEFT ARROW
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - Sft+Ctl+RIGHT ARROW
+  - {t: ▽, type: trans}
+  - Gui+LEFT ARROW
+  - Gui+DOWN ARROW
+  - Gui+RIGHT ARROW
+  - END
+  - DEL
+  - Ctl+PAGE UP
+  - Sft+Ctl+DOWN ARROW
+  - Ctl+PAGE DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  BLUETOOTH:
+  - BRI UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - VOLUME UP
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - BRI DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - MUTE
+  - '&tog_ls'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: VOLUME DOWN, type: held}
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [0, 1]
+  k: ESC
+  l: [default]
+- p: [1, 2]
+  k: Sft+Ctl+V
+  l: [default]
+- p: [2, 3]
+  k: Ctl+X
+  l: [default]
+- p: [10, 11]
+  k: Ctl+A
+  l: [default]
+- p: [11, 12]
+  k: Ctl+V
+  l: [default]
+- p: [12, 13]
+  k: Ctl+C
+  l: [default]
+- p: [13, 14]
+  k: Ctl+R
+  l: [default]
+- p: [23, 24]
+  k: Ctl+D
+  l: [default]
+- p: [8, 9]
+  k: Ctl+HOME
+  l: [default]
+- p: [16, 15]
+  k: Ctl+H
+  l: [default]
+- p: [18, 17]
+  k: Sft+Ctl+L
+  l: [default]
+- p: [19, 18]
+  k: Ctl+;
+  l: [default]
+- p: [28, 29]
+  k: /
+  l: [default]
