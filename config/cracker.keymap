@@ -247,9 +247,9 @@
 
         MOUSE {
             bindings = <
-&trans  &kp EQUAL  &kp PLUS   &kp ASTERISK  &trans                  &trans  &trans    &kp PAGE_UP    &trans    &trans
-&trans  &kp MINUS  &kp MINUS  &kp ASTERISK  &kp LANGUAGE_2          &trans  &mkp MB4  &kp PAGE_DOWN  &mkp MB5  &kp LANGUAGE_1
-&trans  &trans     &trans     &trans        &kp AT                  &trans  &mkp MB3  &mkp MB1       &mkp MB2  &trans
+&trans  &kp EQUAL  &kp PLUS   &kp ASTERISK  &trans                  &trans          &trans    &kp PAGE_UP    &trans    &trans
+&trans  &kp MINUS  &kp MINUS  &kp ASTERISK  &kp LANGUAGE_2          &kp LANGUAGE_1  &mkp MB4  &kp PAGE_DOWN  &mkp MB5  &trans
+&trans  &trans     &trans     &trans        &kp AT                  &trans          &mkp MB3  &mkp MB1       &mkp MB2  &trans
                    &trans     &trans        &trans                  &trans
             >;
         };
