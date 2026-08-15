@@ -50,8 +50,8 @@ layers:
   - '-'
   - '-'
   - /
-  - LANGUAGE 2
-  - LANGUAGE 1
+  - LANG2
+  - LANG1
   - '&mkp MB4'
   - PAGE DOWN
   - '&mkp MB5'
@@ -189,8 +189,8 @@ layers:
   - BRI DN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - MUTE
+  - VOLUME DOWN
   - '&tog_ls'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -200,7 +200,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: VOLUME DOWN, type: held}
+  - {type: held}
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
