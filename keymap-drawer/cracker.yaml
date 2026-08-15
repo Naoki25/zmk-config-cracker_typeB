@@ -10,7 +10,7 @@ layers:
   - U
   - I
   - O
-  - {t: P, h: '4'}
+  - {t: P, h: '1'}
   - {t: A, h: LEFT CONTROL}
   - {t: S, h: LEFT SHIFT}
   - D
@@ -34,8 +34,8 @@ layers:
   - {t: SPACE, h: ARROW}
   - {t: TAB, h: FUNCTION}
   - BACKSPACE
-  - {t: ENTER, h: '4'}
-  '4':
+  - {t: ENTER, h: '1'}
+  '1':
   - {t: ▽, type: trans}
   - '='
   - +
