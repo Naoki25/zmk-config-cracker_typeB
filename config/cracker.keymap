@@ -167,7 +167,7 @@
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_press>,
-                <&kp K_SCROLL_UP>,
+                <&kp C_AC_SCROLL_UP>,
                 <&macro_release>,
                 <&kp LEFT_CONTROL>;
 
@@ -181,7 +181,7 @@
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_press>,
-                <&kp K_SCROLL_DOWN>,
+                <&kp C_AC_SCROLL_DOWN>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
