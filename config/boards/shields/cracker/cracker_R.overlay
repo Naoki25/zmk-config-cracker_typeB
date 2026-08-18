@@ -68,18 +68,18 @@
     status = "okay";
     device = <&trackball>;
         input-processors = 
-            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X²‚ÆY²‚Ì“ü‚ê‘Ö‚¦
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //Y²”½“]
-//            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X²”½“]
-            <&zip_temp_layer 4 10000>;                            //ƒI[ƒgƒ}ƒEƒXƒŒƒCƒ„[‚Ì‘I‘ğ
+            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //Xè»¸ã¨Yè»¸ã®å…¥ã‚Œæ›¿ãˆ
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //Yè»¸åè»¢
+//            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //Xè»¸åè»¢
+            <&zip_temp_layer 4 10000>;                            //ã‚ªãƒ¼ãƒˆãƒã‚¦ã‚¹ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®é¸æŠ
     scroller {
-        layers = <5>;
+        layers = <1>;
         input-processors = 
-            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X²‚ÆY²‚Ì“ü‚ê‘Ö‚¦
-           // <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X²”½“]
-           // <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //Y²”½“]
-            <&zip_xy_to_scroll_mapper>,                         //ƒXƒNƒ[ƒ‹ƒ‚[ƒh‚É•ÏX
-            <&zip_scroll_scaler 1 5>;                           //ƒXƒNƒ[ƒ‹—Ê‚ğ1/4”{
+            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //Xè»¸ã¨Yè»¸ã®å…¥ã‚Œæ›¿ãˆ
+           // <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //Xè»¸åè»¢
+           // <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //Yè»¸åè»¢
+            <&zip_xy_to_scroll_mapper>,                         //ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒ¢ãƒ¼ãƒ‰ã«å¤‰æ›´
+            <&zip_scroll_scaler 1 5>;                           //ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«é‡ã‚’1/4å€
     };
 };
 
@@ -87,7 +87,7 @@
 //   /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
 //     compatible = "zmk,input-processor-temp-layer";
 //     #input-processor-cells = <2>;
-//     require-prior-idle-ms = <350>; /* ƒL[‰Ÿ‰ºŒãA‰½msƒI[ƒgƒ}ƒEƒXƒŒƒCƒ„‚É“ü‚ç‚È‚¢‚æ‚¤‚É‚·‚é‚©AŒë”š–h~ */
+//     require-prior-idle-ms = <350>; /* ã‚­ãƒ¼æŠ¼ä¸‹å¾Œã€ä½•msã‚ªãƒ¼ãƒˆãƒã‚¦ã‚¹ãƒ¬ã‚¤ãƒ¤ã«å…¥ã‚‰ãªã„ã‚ˆã†ã«ã™ã‚‹ã‹ã€èª¤çˆ†é˜²æ­¢ */
 //   };
 // };
 
