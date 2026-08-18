@@ -232,19 +232,22 @@ combos:
 - p: [13, 14]
   k: Ctl+R
   l: [default]
-- p: [23, 22]
+- p: [22, 23]
   k: Ctl+D
   l: [default]
 - p: [8, 9]
   k: Ctl+HOME
   l: [default]
-- p: [16, 15]
+- p: [15, 16]
+  k: Ctl+F
+  l: [default]
+- p: [16, 17]
   k: Ctl+H
   l: [default]
-- p: [18, 17]
+- p: [17, 18]
   k: Sft+Ctl+L
   l: [default]
-- p: [19, 18]
+- p: [18, 19]
   k: Ctl+;
   l: [default]
 - p: [28, 29]
