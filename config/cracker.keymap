@@ -20,8 +20,6 @@
     tapping-term-ms = <400>;
 };
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 4 250>; };
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -179,6 +177,30 @@
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
             label = "BRACKET_MACRO";
         };
+
+        zoom_in_macro: zoom_in_macro {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <15>;
+            tap-ms = <15>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &msc SCRL_UP>,
+                <&macro_release &kp LCTRL>;
+            label = "ZOOM_IN_MACRO";
+        };
+
+        zoom_out_macro: zoom_out_macro {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <15>;
+            tap-ms = <15>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &msc SCRL_DOWN>,
+                <&macro_release &kp LCTRL>;
+            label = "ZOOM_OUT_MACRO";
+        };
     };
 
     behaviors {
@@ -281,7 +303,7 @@
 
         ARROW {
             bindings = <
-&trans                  &kp LC(K_SCROLL_DOWN)  &kp UP_ARROW            &kp LC(K_SCROLL_UP)  &trans                           &trans  &kp C_BRIGHTNESS_DEC  &kp LG(UP_ARROW)    &kp C_BRIGHTNESS_INC  &kp HOME
+&trans                  &zoom_out_macro        &kp UP_ARROW            &zoom_in_macro       &trans                           &trans  &kp C_BRIGHTNESS_DEC  &kp LG(UP_ARROW)    &kp C_BRIGHTNESS_INC  &kp HOME
 &kp LS(LC(LEFT_ARROW))  &kp LEFT_ARROW         &kp DOWN_ARROW          &kp RIGHT_ARROW      &kp LS(LC(RIGHT_ARROW))          &trans  &kp LG(LEFT_ARROW)    &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)   &kp END
 &kp DEL                 &kp LC(PAGE_UP)        &kp LS(LC(DOWN_ARROW))  &kp LC(PAGE_DOWN)    &trans                           &trans  &trans                &trans              &trans                &trans
                                                &trans                  &trans               &trans                           &trans
