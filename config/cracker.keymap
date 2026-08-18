@@ -166,7 +166,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp C_AC_SCROLL_UP>,
                 <&macro_release>,
                 <&kp LEFT_CONTROL>;
@@ -180,7 +180,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp C_AC_SCROLL_DOWN>,
                 <&macro_release>,
                 <&kp LCTRL>;
