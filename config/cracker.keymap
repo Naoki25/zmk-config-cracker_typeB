@@ -131,24 +131,6 @@
             label = "TO_LAYER_0";
         };
 
-        exit_AML: exit_AML {
-            compatible = "zmk,behavior-macro";
-            wait-ms = <0>;
-            tap-ms = <0>;
-            #binding-cells = <0>;
-            bindings = <&tog_off 4>;
-            label = "exit_AML";
-        };
-
-        kp_exit_AML: kp_exit_AML {
-            compatible = "zmk,behavior-macro-one-param";
-            wait-ms = <0>;
-            tap-ms = <0>;
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &exit_AML>;
-            label = "KP_exit_AML";
-        };
-
         screen_shot_macro: screen_shot_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -184,9 +166,13 @@
             tap-ms = <15>;
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &msc SCRL_UP>,
-                <&macro_release &kp LCTRL>;
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&msc SCRL_UP>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
             label = "ZOOM_IN_MACRO";
         };
 
@@ -196,9 +182,13 @@
             tap-ms = <15>;
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &msc SCRL_DOWN>,
-                <&macro_release &kp LCTRL>;
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&msc SCRL_DOWN>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
             label = "ZOOM_OUT_MACRO";
         };
     };
@@ -303,10 +293,10 @@
 
         ARROW {
             bindings = <
-&trans                  &zoom_out_macro        &kp UP_ARROW            &zoom_in_macro       &trans                           &trans  &kp C_BRIGHTNESS_DEC  &kp LG(UP_ARROW)    &kp C_BRIGHTNESS_INC  &kp HOME
-&kp LS(LC(LEFT_ARROW))  &kp LEFT_ARROW         &kp DOWN_ARROW          &kp RIGHT_ARROW      &kp LS(LC(RIGHT_ARROW))          &trans  &kp LG(LEFT_ARROW)    &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)   &kp END
-&kp DEL                 &kp LC(PAGE_UP)        &kp LS(LC(DOWN_ARROW))  &kp LC(PAGE_DOWN)    &trans                           &trans  &trans                &trans              &trans                &trans
-                                               &trans                  &trans               &trans                           &trans
+&trans                  &zoom_out_macro  &kp UP_ARROW            &zoom_in_macro     &trans                           &trans  &kp C_BRIGHTNESS_DEC  &kp LG(UP_ARROW)    &kp C_BRIGHTNESS_INC  &kp HOME
+&kp LS(LC(LEFT_ARROW))  &kp LEFT_ARROW   &kp DOWN_ARROW          &kp RIGHT_ARROW    &kp LS(LC(RIGHT_ARROW))          &trans  &kp LG(LEFT_ARROW)    &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)   &kp END
+&kp DEL                 &kp LC(PAGE_UP)  &kp LS(LC(DOWN_ARROW))  &kp LC(PAGE_DOWN)  &trans                           &trans  &trans                &trans              &trans                &trans
+                                         &trans                  &trans             &trans                           &trans
             >;
         };
 
