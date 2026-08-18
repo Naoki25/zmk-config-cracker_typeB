@@ -149,46 +149,28 @@
         parenthesis_macro: parenthesis_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>, <&kp LEFT>;
             label = "PARENTHESIS_MACRO";
         };
 
         bracket_macro: bracket_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>, <&kp LEFT>;
             label = "BRACKET_MACRO";
         };
 
         zoom_in_macro: zoom_in_macro {
             compatible = "zmk,behavior-macro";
-            wait-ms = <15>;
-            tap-ms = <15>;
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&msc SCRL_UP>,
-                <&macro_release>,
-                <&kp LCTRL>;
-
+            bindings = <&macro_press &kp LCTRL>, <&msc SCRL_UP>, <&macro_release &kp LCTRL>;
             label = "ZOOM_IN_MACRO";
         };
 
         zoom_out_macro: zoom_out_macro {
             compatible = "zmk,behavior-macro";
-            wait-ms = <15>;
-            tap-ms = <15>;
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&msc SCRL_DOWN>,
-                <&macro_release>,
-                <&kp LCTRL>;
-
+            bindings = <&macro_press &kp LCTRL>, <&msc SCRL_DOWN>, <&macro_release &kp LCTRL>;
             label = "ZOOM_OUT_MACRO";
         };
     };
