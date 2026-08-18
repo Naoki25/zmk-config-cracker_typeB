@@ -142,9 +142,9 @@ layers:
   - {t: ▽, type: trans}
   ARROW:
   - {t: ▽, type: trans}
-  - Ctl+SCROLL DOWN
+  - '&zoom_out_macro'
   - UP ARROW
-  - Ctl+SCROLL UP
+  - '&zoom_in_macro'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BRIGHTNESS DEC
