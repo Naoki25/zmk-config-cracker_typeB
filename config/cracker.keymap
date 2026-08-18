@@ -77,7 +77,7 @@
 
         combo_copy_down {
             timeout-ms = <50>;
-            key-positions = <23 22>;
+            key-positions = <22 23>;
             bindings = <&kp LC(D)>;
             layers = <0>;
         };
@@ -89,23 +89,30 @@
             layers = <0>;
         };
 
+        combo_find {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp LC(F)>;
+            layers = <0>;
+        };
+
         combo_replace {
             timeout-ms = <50>;
-            key-positions = <16 15>;
+            key-positions = <16 17>;
             bindings = <&kp LC(H)>;
             layers = <0>;
         };
 
         combo_list {
             timeout-ms = <50>;
-            key-positions = <18 17>;
+            key-positions = <17 18>;
             bindings = <&kp LS(LC(L))>;
             layers = <0>;
         };
 
         combo_date {
             timeout-ms = <50>;
-            key-positions = <19 18>;
+            key-positions = <18 19>;
             bindings = <&kp LC(SEMICOLON)>;
             layers = <0>;
         };
